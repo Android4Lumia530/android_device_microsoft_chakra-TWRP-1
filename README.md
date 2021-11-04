@@ -1,4 +1,4 @@
-# Squid TWRP tree for Moto E 3G (2015)
+# TWRP tree for Microsoft Lumia 535 (2015)
 
 ## Dependencies:
 (you probably don't need most of these)
@@ -16,7 +16,7 @@ repo init -u https://github.com/sultanqasim/twrp_recovery_manifest.git -b androi
 mkdir -p .repo/local_manifests
 ```
 
-Create a file .repo/local\_manifests/moto8610.xml and paste this in
+Create a file .repo/local\_manifests/chakra.xml and paste this in
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
