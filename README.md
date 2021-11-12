@@ -20,9 +20,8 @@ Create a file .repo/local\_manifests/chakra.xml and paste this in
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <project name="sultanqasim/android_device_motorola_condor" path="device/motorola/condor" remote="github" revision="twrp" />
-    <project name="sultanqasim/android_device_motorola_otus" path="device/motorola/otus" remote="github" revision="twrp" />
-    <project name="LineageOS/android_kernel_motorola_msm8610" path="kernel/motorola/msm8610" remote="github" revision="cm-14.1" />
+    <project name="sonic011gamer/android_device_microsoft-chakra-TWRP" path="device/microsoft/chakra" remote="github" revision="twrp" />
+    <project name="sonic011gamer/android_kernel_microsoft_chakra" path="kernel/microsoft/chakra" remote="github" revision="cm-14.1" />
 </manifest>
 ```
 
@@ -34,7 +33,7 @@ repo sync
 ## Building:
 ```
 source build/envsetup.sh
-lunch omni_otus-userdebug
+lunch omni_chakra-userdebug
 make clean
 make installclean
 make -j10 recoveryimage
