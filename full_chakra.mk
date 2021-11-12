@@ -14,9 +14,12 @@
 # limitations under the License.
 #
 
-# Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-$(call inherit-product, device/motorola/otus/full_otus.mk)
-
-PRODUCT_NAME := omni_otus
+# Device identifier. This must come after all inclusions
+PRODUCT_DEVICE := chakra
+PRODUCT_NAME := full_chakra
+PRODUCT_BRAND := microsoft
+PRODUCT_MODEL := chakra
+PRODUCT_MANUFACTURER := microsoft

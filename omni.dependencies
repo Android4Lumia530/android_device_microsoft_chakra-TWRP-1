@@ -1,8 +1,8 @@
 [
   {
     "remote":      "github",
-    "repository":  "LineageOS/android_kernel_motorola_msm8610",
-    "target_path": "kernel/motorola/msm8610",
+    "repository":  "sonic011gamer/android_kernel_microsoft_chakra",
+    "target_path": "kernel/microsoft/chakra",
     "revision":    "cm-14.1"
   }
 ]

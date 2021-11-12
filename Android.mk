@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-ifneq ($(filter otus,$(TARGET_DEVICE)),)
+ifneq ($(filter chakra,$(TARGET_DEVICE)),)
 
 LOCAL_PATH := $(call my-dir)
 

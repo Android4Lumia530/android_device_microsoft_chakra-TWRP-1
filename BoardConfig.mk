@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/motorola/otus
+LOCAL_PATH := device/microsoft/chakra
 
 TARGET_ARCH := arm
 TARGET_CPU_ABI  := armeabi-v7a
@@ -38,20 +38,20 @@ BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000
 BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/mkbootimg.mk
-TARGET_KERNEL_SOURCE := kernel/motorola/msm8610
+TARGET_KERNEL_SOURCE := kernel/microsoft/chakra
 TARGET_KERNEL_CONFIG := msm8610-mini_defconfig
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androidkernel-
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-gnueabihf-
 
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 GET_USE_QCOM_BIONIC_OPTIMIZATION := true
-TARGET_USES_MOTOROLA_LOG := true
+TARGET_USES_MOTOROLA_LOG := false
 TARGET_USES_QCOM_BSP := true
 
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
-TARGET_RECOVERY_FSTAB := device/motorola/otus/twrp.fstab
+TARGET_RECOVERY_FSTAB := device/microsoft/chakra/twrp.fstab
 
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x00A00000
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x00A00000
