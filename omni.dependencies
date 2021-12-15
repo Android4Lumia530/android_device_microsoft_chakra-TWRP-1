@@ -1,8 +1,8 @@
 [
   {
     "remote":      "github",
-    "repository":  "sonic011gamer/android_kernel_microsoft_chakra",
+    "repository":  "Mainline4Lumia/linux-next",
     "target_path": "kernel/microsoft/chakra",
-    "revision":    "cm-14.1"
+    "revision":    "for-upstream/msm8212"
   }
 ]
