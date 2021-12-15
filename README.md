@@ -21,7 +21,7 @@ Create a file .repo/local\_manifests/chakra.xml and paste this in
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <project name="sonic011gamer/android_device_microsoft_chakra-TWRP" path="device/microsoft/chakra" remote="github" revision="twrp" />
-    <project name="sonic011gamer/android_kernel_microsoft_chakra" path="kernel/microsoft/chakra" remote="github" revision="cm-14.1" />
+    <project name="Mainline4Lumia/linux-next" path="kernel/microsoft/chakra" remote="github" revision="for-upstream/msm8212" />
 </manifest>
 ```
 
