@@ -1,1 +1,1 @@
-add_lunch_combo omni_chakra-userdebug
+add_lunch_combo omni_rock-userdebug
