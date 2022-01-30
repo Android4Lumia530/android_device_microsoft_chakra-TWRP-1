@@ -14,10 +14,9 @@
 # limitations under the License.
 #
 
-ifneq ($(filter rock,$(TARGET_DEVICE)),)
+# Inherit from our custom product configuration
+$(call inherit-product, vendor/omni/config/common.mk)
 
-LOCAL_PATH := $(call my-dir)
+$(call inherit-product, device/nokia/rock/full_chakra.mk)
 
-include $(call all-makefiles-under,$(LOCAL_PATH))
-
-endif
+PRODUCT_NAME := omni_rock

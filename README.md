@@ -20,8 +20,8 @@ Create a file .repo/local\_manifests/rock.xml and paste this in
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <project name="sonic011gamer/android_device_microsoft_chakra-TWRP" path="device/microsoft/chakra" remote="github" revision="twrp" />
-    <project name="Mainline4Lumia/linux-next" path="kernel/microsoft/chakra" remote="github" revision="for-upstream/msm8212" />
+    <project name="sonic011gamer/android_device_microsoft_chakra-TWRP" path="device/nokia/rock" remote="github" revision="twrp" />
+    <project name="Android4Lumia530/linux-next" path="kernel/nokia/rock" remote="github" revision="530" />
 </manifest>
 ```
 
@@ -33,7 +33,7 @@ repo sync
 ## Building:
 ```
 source build/envsetup.sh
-lunch omni_chakra-userdebug
+lunch omni_rock-userdebug
 make clean
 make installclean
 make -j10 recoveryimage

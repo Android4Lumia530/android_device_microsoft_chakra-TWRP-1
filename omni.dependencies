@@ -1,8 +1,8 @@
 [
   {
     "remote":      "github",
-    "repository":  "Mainline4Lumia/linux-next",
-    "target_path": "kernel/microsoft/chakra",
-    "revision":    "for-upstream/msm8212"
+    "repository":  "Android4Lumia530/linux-next",
+    "target_path": "kernel/nokia/rock",
+    "revision":    "530"
   }
 ]

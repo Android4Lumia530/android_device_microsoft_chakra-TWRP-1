@@ -14,10 +14,12 @@
 # limitations under the License.
 #
 
-ifneq ($(filter rock,$(TARGET_DEVICE)),)
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-LOCAL_PATH := $(call my-dir)
-
-include $(call all-makefiles-under,$(LOCAL_PATH))
-
-endif
+# Device identifier. This must come after all inclusions
+PRODUCT_DEVICE := rock
+PRODUCT_NAME := full_rock
+PRODUCT_BRAND := nokia
+PRODUCT_MODEL := rock
+PRODUCT_MANUFACTURER := nokia
